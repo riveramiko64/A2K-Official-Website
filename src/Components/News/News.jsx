@@ -1,5 +1,5 @@
 import React from 'react'
-import './blog.css'
+import './news.css'
 import { VscArrowSmallRight } from "react-icons/vsc";
 
 //image
@@ -35,7 +35,7 @@ const News = [
   },
 ]
 
-const Blog = () => {
+const NewsA2K = () => {
   return (
 
     <section className="blog container section">
@@ -83,4 +83,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default NewsA2K

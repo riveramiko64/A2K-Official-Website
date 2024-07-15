@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './popular.css';
+import './services.css'
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
 import { BsDot } from "react-icons/bs";
 import { FaRegStar } from "react-icons/fa";
@@ -20,18 +20,18 @@ import img11 from '../../Assets/11.jpg';
 
 const Data = [
   { id: 1, imgSrc: img2, h6title: 'Software Development', links: '' },
-  { id: 2, imgSrc: img3, h6title: 'Software Development', links: '' },
-  { id: 3, imgSrc: img4, h6title: 'Software Development', links: '' },
-  { id: 4, imgSrc: img5, h6title: 'Hardware Development', links: '' },
-  { id: 5, imgSrc: img6, h6title: 'Hardware Development', links: '' },
-  { id: 6, imgSrc: img7, h6title: 'Networking', links: '' },
-  { id: 7, imgSrc: img8, h6title: 'Networking', links: '' },
-  { id: 8, imgSrc: img9, h6title: 'Cybersecurity', links: '' },
-  { id: 9, imgSrc: img10, h6title: 'Cybersecurity', links: '' },
-  { id: 10, imgSrc: img11, h6title: 'AI & ML', links: '' },
+  { id: 2, imgSrc: img3, h6title: 'Hardware Development', links: '' },
+  { id: 3, imgSrc: img4, h6title: 'Modelling and Data Analysis', links: '' },
+  { id: 4, imgSrc: img5, h6title: 'Information Systems', links: '' },
+  { id: 5, imgSrc: img6, h6title: 'Internship and Mentorship', links: '' },
+  { id: 6, imgSrc: img7, h6title: 'Training', links: '' },
+  { id: 7, imgSrc: img8, h6title: 'Consultancy', links: '' },
+  { id: 8, imgSrc: img9, h6title: 'Expertise Support', links: '' },
+  { id: 9, imgSrc: img10, h6title: 'Facilitation Services', links: '' },
+  { id: 10, imgSrc: img11, h6title: 'Seed Funding', links: '' },
 ];
 
-const Popular = () => {
+const Services = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const numVisibleSlides = 5;
   const carouselRef = useRef(null);
@@ -125,4 +125,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default Services;

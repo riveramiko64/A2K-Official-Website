@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import './offer.css'
+import './story.css'
 import { IoNewspaperOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -41,7 +41,7 @@ const Offers = [
   
 ]
 
-const Offer = () => {
+const Story = () => {
 
     useEffect(() => {
     Aos.init({duration: 2000})
@@ -104,4 +104,4 @@ const Offer = () => {
   )
 }
 
-export default Offer
+export default Story
