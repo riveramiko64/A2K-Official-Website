@@ -8,10 +8,14 @@ import ContactForm from './Components/ContactForm/ContactForm'
 import NewsA2K from './Components/News/News'
 import Story from './Components/Story/Story'
 import Services from './Components/Services/Services'
+import KeyServices from './Components/KeyServices/KeyServices'
+import Learn from './Components/LearnWIthUs/Learn'
+import OurStory from './Components/OurStory/OurStory'
 
 const App = () => {
   return (
-      <>
+    <>
+      {/*
           <Navbar />
           <Home />
           <Services />
@@ -20,6 +24,13 @@ const App = () => {
           <NewsA2K />
           <ContactForm/>
           <Footer />
+
+          <OurStory/>
+      */}
+
+
+      <Learn/>
+      <KeyServices/>
       
           
       </>

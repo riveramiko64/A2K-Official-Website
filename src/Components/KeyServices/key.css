@@ -1,0 +1,214 @@
+:root {
+  --PrimaryColor: hsla(26, 93%, 50%);
+  --HoverColor: hsla(26, 90%, 42%);
+  --whiteColor: hsla(0, 0%, 100%);
+  --blackColor: hsla(0, 0%, 18%);
+  --textColor: hsla(240, 1%, 48%);
+  --whiteColorDeam: hsla(0, 0%, 93%);
+  --greyBg: hsla(0, 0%, 96%);
+  --inputColor: hsla(330, 12%, 97%);
+  --greyText: rgb(190, 190, 190);
+  --SecondaryColor: hsl(204, 33%, 97%);
+  --MainColor: hsl(20, 4%, 13%);
+  --ThirdColor: hsl(214, 10%, 34%);
+  --OnHoverColor: hsl(210, 10%, 14%);
+  --ButtonHover: hsl(210, 17%, 98%);
+  --GoldColor: hsl(38, 36%, 51%);
+  --MoreGoldColor: hsl(38, 59%, 48%);
+}
+
+.keyservices .secContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.keyservices .secContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.keyservices .secContainer .mainContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.keyservices .secContainer .mainContent .singleItem,
+.keyservices .secContainer .mainContent .botItem {
+  text-align: center;
+  margin: 1rem;
+}
+.keyservices .secContainer .mainContent .singleItem img,
+.keyservices .secContainer .mainContent .botItem img {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+.keyservices .secContainer .mainContent .singleItem p,
+.keyservices .secContainer .mainContent .botItem p {
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: var(--textColor);
+}
+.keyservices .secContainer .mainContent .botItem {
+  grid-column: 2/3;
+}
+.keyservices .secContainer .botMainContent {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--blackColor);
+  padding-top: 5rem;
+}
+.keyservices .secContainer .botMainContent .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.8rem;
+  text-align: start;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.keyservices .secContainer .botMainContent .botContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.keyservices .secContainer .botMainContent .botContent .singleItem {
+  text-align: center;
+  margin: 1rem;
+}
+.keyservices .secContainer .botMainContent .botContent .singleItem img {
+  height: 510px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+.keyservices .secContainer .botMainContent .botContent .singleItem h1 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 0.8rem;
+  color: var(--blackColor);
+}
+.keyservices .secContainer .servicesMainContent {
+  padding-top: 5rem;
+  border-top: 1px solid var(--blackColor);
+  margin: 5rem;
+}
+.keyservices .secContainer .servicesMainContent .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright {
+  background: var(--MainColor);
+  border-radius: 15px;
+  margin: 2rem 0 0 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem img {
+  border-radius: 1rem;
+  border: 1px solid var(--whiteColor);
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem img:hover {
+  transform: scale(1.05);
+  transition: 3s ease;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem h1 {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  color: var(--whiteColor);
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: var(--whiteColor);
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem a {
+  color: var(--greyText);
+  font-size: 20px;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem a:hover {
+  color: var(--whiteColor);
+  font-size: 21px;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft {
+  background: var(--MainColor);
+  border-radius: 15px;
+  margin: 2rem 15rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem img {
+  border-radius: 1rem;
+  border: 1px solid var(--whiteColor);
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem img:hover {
+  transform: scale(1.05);
+  transition: 3s ease;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem h1 {
+  font-size: 35px;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  color: var(--whiteColor);
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  color: var(--whiteColor);
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem a {
+  color: var(--greyText);
+  font-size: 20px;
+}
+.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem a:hover {
+  color: var(--whiteColor);
+  font-size: 21px;
+}/*# sourceMappingURL=key.css.map */
