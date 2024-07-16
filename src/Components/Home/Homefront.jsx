@@ -6,7 +6,7 @@ import bgImage3 from '../../Assets/3.jpg';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 
-const Home = () => {
+const Homes = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -68,4 +68,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homes;
