@@ -1,7 +1,7 @@
 import React from 'react'
 import './app.css'
-import Navbar from './Components/Navbar/Navbarfont'
-import Home from './Components/Home/Home'
+
+import Home from './Components/Home/Homefront'
 import About from './Components/About/Aboutfront'
 import Footer from './Components/Footer/Footer'
 import ContactForm from './Components/ContactForm/ContactForm'
@@ -11,26 +11,28 @@ import Services from './Components/Services/Services'
 import KeyServices from './Components/KeyServices/KeyServices'
 import Learn from './Components/LearnWIthUs/Learn'
 import OurStory from './Components/OurStory/OurStory'
+import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
   return (
     <>
       
          
-          
-          <Home  />        
-
+          <Navbar/>
+         <ContactForm/>         
+        <Home/>
           
       
 
       {/*<OurStory/>
       <Learn/>
       <KeyServices/>
+      <Home  />
       <About/>
        <Navbar />
       <Story />
           <NewsA2K />
-          <ContactForm/>
+          
           <Footer />*/}
       
       

@@ -1,4 +1,5 @@
 /* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --PrimaryColor: hsla(26, 93%, 50%);
   --HoverColor: hsla(26, 90%, 42%);
@@ -18,7 +19,7 @@
   --MoreGoldColor: hsl(38, 59%, 48%);
 }
 
-.navbarCssnavBarSection .navbarCssheader {
+.navBarSection .header {
   position: fixed;
   display: flex;
   align-items: center;
@@ -31,7 +32,7 @@
   padding-left: 4rem;
   padding-right: 4rem;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCsslogoDiv .navbarCsslogo {
+.navBarSection .header .logoDiv .logo {
   color: var(--blackColor);
   cursor: pointer;
   display: flex;
@@ -46,34 +47,34 @@
       margin-left: 1rem;
   }*/
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCsslogoDiv .navbarCsslogo .navbarCssangad {
+.navBarSection .header .logoDiv .logo .angad {
   margin-top: 0.3rem;
   font-size: 7px;
   font-weight: 600;
   color: black;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar {
+.navBarSection .header .navBar {
   display: flex;
   align-items: center;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists {
+.navBarSection .header .navBar .navLists {
   display: flex;
   align-items: center;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem {
+.navBarSection .header .navBar .navLists .navItem {
   position: relative;
   margin: 0 1.5rem;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssnavLink {
+.navBarSection .header .navBar .navLists .navItem .navLink {
   color: var(--blackColor);
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssnavLink:hover {
+.navBarSection .header .navBar .navLists .navItem .navLink:hover {
   color: var(--GoldColor);
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu {
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -87,52 +88,52 @@
   border-radius: 10px;
   z-index: 1001;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu li {
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li {
   padding: 0.5rem 1rem;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu li a {
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li a {
   color: var(--blackColor);
   text-decoration: none;
   font-size: 1rem;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu li a:hover {
+.navBarSection .header .navBar .navLists .navItem .dropdownMenu li a:hover {
   color: var(--GoldColor);
 }
 @media screen and (min-width: 981px) {
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem:hover .navbarCssdropdownMenu {
+  .navBarSection .header .navBar .navLists .navItem:hover .dropdownMenu {
     display: block;
   }
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem.show .navbarCssdropdownMenu {
+.navBarSection .header .navBar .navLists .navItem.show .dropdownMenu {
   display: block;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns {
+.navBarSection .header .navBar .headerBtns {
   display: flex;
   align-items: center;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns .navbarCssiconsoc {
+.navBarSection .header .navBar .headerBtns .iconsoc {
   margin: 0.5rem;
   font-size: 20px;
   color: var(--blackColor);
   cursor: pointer;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns .navbarCssiconsoc:hover {
+.navBarSection .header .navBar .headerBtns .iconsoc:hover {
   color: var(--GoldColor);
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCsstoggleNavbar {
+.navBarSection .header .toggleNavbar {
   display: none;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCsstoggleNavbar .navbarCssicon {
+.navBarSection .header .toggleNavbar .icon {
   margin-right: 3rem;
   font-size: 25px;
   color: var(--blackColor);
   cursor: pointer;
 }
-.navbarCssnavBarSection .navbarCssheader .navbarCsstoggleNavbar .navbarCssicon:hover {
+.navBarSection .header .toggleNavbar .icon:hover {
   color: var(--textColor);
 }
 @media screen and (max-width: 980px) {
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar {
+  .navBarSection .header .navBar {
     position: fixed;
     top: -100%;
     left: 0;
@@ -145,29 +146,29 @@
     transition: top 0.7s ease;
     z-index: 999;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar.navbarCssactiveNavbar {
+  .navBarSection .header .navBar.activeNavbar {
     top: 100px;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists {
+  .navBarSection .header .navBar .navLists {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem {
+  .navBarSection .header .navBar .navLists .navItem {
     width: 100%;
     text-align: center;
     margin: 1rem 0;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssnavLink {
+  .navBarSection .header .navBar .navLists .navItem .navLink {
     color: var(--blackColor);
     font-size: 0.9rem;
     font-weight: 450;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssnavLink:hover {
+  .navBarSection .header .navBar .navLists .navItem .navLink:hover {
     color: var(--textColor);
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu {
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -176,32 +177,32 @@
     width: 100%;
     background: var(--SecondaryColor);
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu li {
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu li {
     padding: 0.5rem 1rem;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem .navbarCssdropdownMenu li a {
+  .navBarSection .header .navBar .navLists .navItem .dropdownMenu li a {
     font-size: 0.9rem;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssnavLists .navbarCssnavItem.navbarCssshow .navbarCssdropdownMenu {
+  .navBarSection .header .navBar .navLists .navItem.show .dropdownMenu {
     display: block;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns {
+  .navBarSection .header .navBar .headerBtns {
     flex-direction: row;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns .navbarCssiconsoc {
+  .navBarSection .header .navBar .headerBtns .iconsoc {
     margin: 0.8rem;
     font-size: 20px;
     color: var(--blackColor);
     cursor: pointer;
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCssnavBar .navbarCssheaderBtns .navbarCssiconsoc:hover {
+  .navBarSection .header .navBar .headerBtns .iconsoc:hover {
     color: var(--textColor);
   }
-  .navbarCssnavBarSection .navbarCssheader .navbarCsstoggleNavbar {
+  .navBarSection .header .toggleNavbar {
     display: block;
   }
 }
-.navbarCssnavBarSection .navbarCssactiveHeader {
+.navBarSection .activeHeader {
   background: var(--SecondaryColor);
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
 }/*# sourceMappingURL=navbarfront.module.css.map */

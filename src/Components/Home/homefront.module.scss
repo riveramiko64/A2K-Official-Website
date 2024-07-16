@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --PrimaryColor: hsla(26, 93%, 50%);
     --HoverColor: hsla(26, 90%, 42%);
@@ -123,6 +125,7 @@
                 border: 2px solid var(--whiteColor);
                 color: var(--whiteColor);
                 cursor: pointer;
+                border-radius: 3rem;
 
                 &:hover {
                     background-color: var(--whiteColor);

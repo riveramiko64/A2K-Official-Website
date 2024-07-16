@@ -1,5 +1,5 @@
 /* Colors */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --PrimaryColor: hsla(26, 93%, 50%);
     --HoverColor: hsla(26, 90%, 42%);
@@ -23,8 +23,8 @@
 }
 
 
-.navbarCssnavBarSection {
-    .navbarCssheader {
+.navBarSection {
+    .header {
         position: fixed;
         display: flex;
         align-items: center;
@@ -38,8 +38,8 @@
         padding-left: 4rem;
         padding-right: 4rem;
 
-        .navbarCsslogoDiv {
-            .navbarCsslogo {
+        .logoDiv {
+            .logo {
                 color: var(--blackColor);
                 cursor: pointer;
                 display: flex;
@@ -55,7 +55,7 @@
                     margin-left: 1rem;
                 }*/
 
-                .navbarCssangad {
+                .angad {
                     margin-top: 0.3rem;
                     font-size: 7px;
                     font-weight: 600;
@@ -64,19 +64,19 @@
             }
         }
 
-        .navbarCssnavBar {
+        .navBar {
             display: flex;
             align-items: center;
 
-            .navbarCssnavLists {
+            .navLists {
                 display: flex;
                 align-items: center;
 
-                .navbarCssnavItem {
+                .navItem {
                     position: relative;
                     margin: 0 1.5rem;
 
-                    .navbarCssnavLink {
+                    .navLink {
                         color: var(--blackColor);
                         font-size: 1.2rem;
                         font-weight: 400;
@@ -88,7 +88,7 @@
                     }
 
                     // Dropdown menu styles
-                    .navbarCssdropdownMenu {
+                    .dropdownMenu {
                         display: none;
                         position: absolute;
                         top: 100%;
@@ -119,23 +119,23 @@
 
                     // Display dropdown on hover for larger screens
                     @media screen and (min-width: 981px) {
-                        &:hover .navbarCssdropdownMenu {
+                        &:hover .dropdownMenu {
                             display: block;
                         }
                     }
 
                     // Show dropdown on click for smaller screens
-                    &.show .navbarCssdropdownMenu {
+                    &.show .dropdownMenu {
                         display: block;
                     }
                 }
             }
 
-            .navbarCssheaderBtns {
+            .headerBtns {
                 display: flex;
                 align-items: center;
 
-                .navbarCssiconsoc {
+                .iconsoc {
                     margin: 0.5rem;
                     font-size: 20px;
                     color: var(--blackColor);
@@ -148,10 +148,10 @@
             }
         }
 
-        .navbarCsstoggleNavbar {
+        .toggleNavbar {
             display: none;
 
-            .navbarCssicon {
+            .icon {
                 margin-right: 3rem;
                 font-size: 25px;
                 color: var(--blackColor);
@@ -165,8 +165,8 @@
     }
 
     @media screen and (max-width: 980px) {
-        .navbarCssheader {
-            .navbarCssnavBar {
+        .header {
+            .navBar {
                 position: fixed;
                 top: -100%;
                 left: 0;
@@ -179,22 +179,22 @@
                 transition: top 0.7s ease;
                 z-index: 999;
 
-                &.navbarCssactiveNavbar {
+                &.activeNavbar {
                     top: 100px;
                 }
 
-                .navbarCssnavLists {
+                .navLists {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
 
-                    .navbarCssnavItem {
+                    .navItem {
                         width: 100%;
                         text-align: center;
                         margin: 1rem 0;
 
-                        .navbarCssnavLink {
+                        .navLink {
                             color: var(--blackColor);
                             font-size: 0.9rem;
                             font-weight: 450;
@@ -204,7 +204,7 @@
                             }
                         }
 
-                        .navbarCssdropdownMenu {
+                        .dropdownMenu {
                             position: relative;
                             justify-content: center;
                             align-items: center;
@@ -222,16 +222,16 @@
                             }
                         }
 
-                        &.navbarCssshow .navbarCssdropdownMenu {
+                        &.show .dropdownMenu {
                             display: block;
                         }
                     }
                 }
 
-                .navbarCssheaderBtns {
+                .headerBtns {
                     flex-direction: row;
 
-                    .navbarCssiconsoc {
+                    .iconsoc {
                         margin: 0.8rem;
                         font-size: 20px;
                         color: var(--blackColor);
@@ -244,13 +244,13 @@
                 }
             }
 
-            .navbarCsstoggleNavbar {
+            .toggleNavbar {
                 display: block;
             }
         }
     }
 
-    .navbarCssactiveHeader {
+    .activeHeader {
         background: var(--SecondaryColor);
         box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
     }
