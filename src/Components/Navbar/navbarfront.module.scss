@@ -23,8 +23,8 @@
 }
 
 
-.navBarSection {
-    .header {
+.navbarCssnavBarSection {
+    .navbarCssheader {
         position: fixed;
         display: flex;
         align-items: center;
@@ -38,8 +38,8 @@
         padding-left: 4rem;
         padding-right: 4rem;
 
-        .logoDiv {
-            .logo {
+        .navbarCsslogoDiv {
+            .navbarCsslogo {
                 color: var(--blackColor);
                 cursor: pointer;
                 display: flex;
@@ -55,7 +55,7 @@
                     margin-left: 1rem;
                 }*/
 
-                .angad {
+                .navbarCssangad {
                     margin-top: 0.3rem;
                     font-size: 7px;
                     font-weight: 600;
@@ -64,19 +64,19 @@
             }
         }
 
-        .navBar {
+        .navbarCssnavBar {
             display: flex;
             align-items: center;
 
-            .navLists {
+            .navbarCssnavLists {
                 display: flex;
                 align-items: center;
 
-                .navItem {
+                .navbarCssnavItem {
                     position: relative;
                     margin: 0 1.5rem;
 
-                    .navLink {
+                    .navbarCssnavLink {
                         color: var(--blackColor);
                         font-size: 1.2rem;
                         font-weight: 400;
@@ -88,7 +88,7 @@
                     }
 
                     // Dropdown menu styles
-                    .dropdownMenu {
+                    .navbarCssdropdownMenu {
                         display: none;
                         position: absolute;
                         top: 100%;
@@ -119,23 +119,23 @@
 
                     // Display dropdown on hover for larger screens
                     @media screen and (min-width: 981px) {
-                        &:hover .dropdownMenu {
+                        &:hover .navbarCssdropdownMenu {
                             display: block;
                         }
                     }
 
                     // Show dropdown on click for smaller screens
-                    &.show .dropdownMenu {
+                    &.show .navbarCssdropdownMenu {
                         display: block;
                     }
                 }
             }
 
-            .headerBtns {
+            .navbarCssheaderBtns {
                 display: flex;
                 align-items: center;
 
-                .iconsoc {
+                .navbarCssiconsoc {
                     margin: 0.5rem;
                     font-size: 20px;
                     color: var(--blackColor);
@@ -148,10 +148,10 @@
             }
         }
 
-        .toggleNavbar {
+        .navbarCsstoggleNavbar {
             display: none;
 
-            .icon {
+            .navbarCssicon {
                 margin-right: 3rem;
                 font-size: 25px;
                 color: var(--blackColor);
@@ -165,8 +165,8 @@
     }
 
     @media screen and (max-width: 980px) {
-        .header {
-            .navBar {
+        .navbarCssheader {
+            .navbarCssnavBar {
                 position: fixed;
                 top: -100%;
                 left: 0;
@@ -179,22 +179,22 @@
                 transition: top 0.7s ease;
                 z-index: 999;
 
-                &.activeNavbar {
+                &.navbarCssactiveNavbar {
                     top: 100px;
                 }
 
-                .navLists {
+                .navbarCssnavLists {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
 
-                    .navItem {
+                    .navbarCssnavItem {
                         width: 100%;
                         text-align: center;
                         margin: 1rem 0;
 
-                        .navLink {
+                        .navbarCssnavLink {
                             color: var(--blackColor);
                             font-size: 0.9rem;
                             font-weight: 450;
@@ -204,7 +204,7 @@
                             }
                         }
 
-                        .dropdownMenu {
+                        .navbarCssdropdownMenu {
                             position: relative;
                             justify-content: center;
                             align-items: center;
@@ -222,16 +222,16 @@
                             }
                         }
 
-                        &.show .dropdownMenu {
+                        &.navbarCssshow .navbarCssdropdownMenu {
                             display: block;
                         }
                     }
                 }
 
-                .headerBtns {
+                .navbarCssheaderBtns {
                     flex-direction: row;
 
-                    .iconsoc {
+                    .navbarCssiconsoc {
                         margin: 0.8rem;
                         font-size: 20px;
                         color: var(--blackColor);
@@ -244,13 +244,13 @@
                 }
             }
 
-            .toggleNavbar {
+            .navbarCsstoggleNavbar {
                 display: block;
             }
         }
     }
 
-    .activeHeader {
+    .navbarCssactiveHeader {
         background: var(--SecondaryColor);
         box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
     }

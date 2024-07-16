@@ -1,8 +1,8 @@
 import React from 'react'
 import './app.css'
-import Navbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar/Navbarfont'
 import Home from './Components/Home/Home'
-import About from './Components/About/About'
+import About from './Components/About/Aboutfront'
 import Footer from './Components/Footer/Footer'
 import ContactForm from './Components/ContactForm/ContactForm'
 import NewsA2K from './Components/News/News'
@@ -18,8 +18,7 @@ const App = () => {
       
          
           
-          <About/>
-          
+          <Home  />        
 
           
       
@@ -27,6 +26,7 @@ const App = () => {
       {/*<OurStory/>
       <Learn/>
       <KeyServices/>
+      <About/>
        <Navbar />
       <Story />
           <NewsA2K />

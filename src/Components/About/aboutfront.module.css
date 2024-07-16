@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --PrimaryColor: hsla(26, 93%, 50%);
   --HoverColor: hsla(26, 90%, 42%);
@@ -17,7 +18,7 @@
 }
 
 .aboutCssAbout .aboutCssSecContainer {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 .aboutCssAbout .aboutCssSecContainer .aboutCssTitle {
@@ -121,4 +122,4 @@
     width: 100%;
     height: auto;
   }
-}/*# sourceMappingURL=about.module.css.map */
+}/*# sourceMappingURL=aboutfront.module.css.map */

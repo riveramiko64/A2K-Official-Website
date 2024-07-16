@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import aboutCss from './about.module.css';
+import aboutCss from './aboutfront.module.css';
 
 //img
 import subsidaryImg from '../../Assets/ANGAD-LOGO.png';
