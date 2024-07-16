@@ -3,37 +3,37 @@ import './app.css'
 
 import Home from './Components/Home/Homefront'
 import About from './Components/About/Aboutfront'
-import Footer from './Components/Footer/Footer'
+import Footer from './Components/Footer/Footerfront'
 import ContactForm from './Components/ContactForm/ContactForm'
-import NewsA2K from './Components/News/News'
+import NewsA2K from './Components/News/Newsfront'
 import Story from './Components/Story/Story'
 import Services from './Components/Services/Services'
 import KeyServices from './Components/KeyServices/KeyServices'
 import Learn from './Components/LearnWIthUs/Learn'
 import OurStory from './Components/OurStory/OurStory'
-import Navbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar/Navbarfront'
 
 const App = () => {
   return (
     <>
-      
+      <NewsA2K />
          
-          <Navbar/>
-         <ContactForm/>         
-        <Home/>
           
-      
 
       {/*<OurStory/>
-      <Learn/>
+      <NewsA2K />
       <KeyServices/>
       <Home  />
       <About/>
        <Navbar />
       <Story />
-          <NewsA2K />
           
-          <Footer />*/}
+          <Navbar/>
+         <ContactForm/>         
+        <Home/>
+           <Footer />
+      
+         */}
       
       
           

@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
 :root {
   --PrimaryColor: hsla(26, 93%, 50%);
   --HoverColor: hsla(26, 90%, 42%);
@@ -17,94 +26,11 @@
   --MoreGoldColor: hsl(38, 59%, 48%);
 }
 
-
-/* Default Styling*/
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.section {
-  padding: 1rem 0 1rem;
-}
-
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.icon {
-  font-size: 2rem;
-  cursor: pointer;
-
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  padding: .4rem 1.5rem;
-  background: var(--blackColor);
-  border: none;
-  outline: none;
-  border-radius: 3rem;
-  cursor: pointer;
-}
-
-.btn a {
-  color: var(--whiteColor);
-  font-weight: 500;
-
-}
-
-.btn:hover a {
-  color: var(--whiteColor);
-}
-
-.secIntro {
-  max-width: 70%;
-  text-align: center;
-  margin: 0 auto 2rem;
-}
-
-.secIntro .secTitile {
-  color: var(--blackColor);
-  line-height: 1.5rem;
-  padding-bottom: .5rem;
-}
-
-.secIntro p {
-  font-size: 13px;
-  color: var(--textColor);
-  font-weight: 500;
-}
-
-img,
-video {
-  width: 100%;
-  height: auto;
-}
-
-input {
-  font-size: 100%;
-}
-
-.keyservices .secContainer {
+.keyservicessec .secContainer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.keyservices .secContainer .title {
+.keyservicessec .secContainer .title {
   color: var(--blackColor);
   line-height: 1.5rem;
   padding-bottom: 0.8rem;
@@ -112,7 +38,7 @@ input {
   font-size: 35px;
   font-weight: 600;
 }
-.keyservices .secContainer .mainContent {
+.keyservicessec .secContainer .mainContent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
@@ -120,33 +46,35 @@ input {
   justify-content: center;
   align-items: center;
 }
-.keyservices .secContainer .mainContent .singleItem,
-.keyservices .secContainer .mainContent .botItem {
+.keyservicessec .secContainer .mainContent .singleItem,
+.keyservicessec .secContainer .mainContent .botItem {
   text-align: center;
   margin: 1rem;
 }
-.keyservices .secContainer .mainContent .singleItem img,
-.keyservices .secContainer .mainContent .botItem img {
+.keyservicessec .secContainer .mainContent .singleItem img,
+.keyservicessec .secContainer .mainContent .botItem img {
   width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
 }
-.keyservices .secContainer .mainContent .singleItem p,
-.keyservices .secContainer .mainContent .botItem p {
+.keyservicessec .secContainer .mainContent .singleItem p,
+.keyservicessec .secContainer .mainContent .botItem p {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 0.5rem;
   color: var(--textColor);
 }
-.keyservices .secContainer .mainContent .botItem {
+.keyservicessec .secContainer .mainContent .botItem {
   grid-column: 2/3;
 }
-.keyservices .secContainer .botMainContent {
+.keyservicessec .secContainer .botMainContent {
   margin-top: 2.5rem;
   border-top: 1px solid var(--blackColor);
   padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-.keyservices .secContainer .botMainContent .title {
+.keyservicessec .secContainer .botMainContent .title {
   color: var(--blackColor);
   line-height: 1.5rem;
   padding-bottom: 0.8rem;
@@ -154,8 +82,9 @@ input {
   font-size: 35px;
   font-weight: 600;
   margin-bottom: 1rem;
+  padding-left: 2rem;
 }
-.keyservices .secContainer .botMainContent .botContent {
+.keyservicessec .secContainer .botMainContent .botContent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
@@ -163,28 +92,28 @@ input {
   justify-content: center;
   align-items: center;
 }
-.keyservices .secContainer .botMainContent .botContent .singleItem {
+.keyservicessec .secContainer .botMainContent .botContent .singleItem {
   text-align: center;
   margin: 1rem;
 }
-.keyservices .secContainer .botMainContent .botContent .singleItem img {
+.keyservicessec .secContainer .botMainContent .botContent .singleItem img {
   height: 510px;
   width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
 }
-.keyservices .secContainer .botMainContent .botContent .singleItem h1 {
+.keyservicessec .secContainer .botMainContent .botContent .singleItem h1 {
   font-size: 30px;
   font-weight: 400;
   padding-bottom: 0.8rem;
   color: var(--blackColor);
 }
-.keyservices .secContainer .servicesMainContent {
+.keyservicessec .secContainer .servicesMainContent {
   padding-top: 5rem;
   border-top: 1px solid var(--blackColor);
   margin: 5rem;
 }
-.keyservices .secContainer .servicesMainContent .title {
+.keyservicessec .secContainer .servicesMainContent .title {
   color: var(--blackColor);
   line-height: 1.5rem;
   padding-bottom: 0.8rem;
@@ -193,7 +122,7 @@ input {
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright {
   background: var(--MainColor);
   border-radius: 15px;
   margin: 2rem 0 0 15rem;
@@ -204,14 +133,14 @@ input {
   justify-content: center;
   align-items: center;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem {
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem img {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem img {
   border-radius: 1rem;
   border: 1px solid var(--whiteColor);
   height: 300px;
@@ -219,32 +148,32 @@ input {
   max-width: 400px;
   overflow: hidden;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem img:hover {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem img:hover {
   transform: scale(1.05);
   transition: 3s ease;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem h1 {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem h1 {
   font-size: 35px;
   font-weight: 500;
   padding-bottom: 0.8rem;
   color: var(--whiteColor);
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem p {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem p {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 1rem;
   color: var(--whiteColor);
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem a {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem a {
   color: var(--greyText);
   font-size: 20px;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentright .singleItem a:hover {
+.keyservicessec .secContainer .servicesMainContent .servicesContentright .singleItem a:hover {
   color: var(--whiteColor);
   font-size: 21px;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft {
   background: var(--MainColor);
   border-radius: 15px;
   margin: 2rem 15rem 0 0;
@@ -255,14 +184,14 @@ input {
   justify-content: center;
   align-items: center;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem {
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem img {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem img {
   border-radius: 1rem;
   border: 1px solid var(--whiteColor);
   height: 300px;
@@ -270,28 +199,28 @@ input {
   max-width: 400px;
   overflow: hidden;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem img:hover {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem img:hover {
   transform: scale(1.05);
   transition: 3s ease;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem h1 {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem h1 {
   font-size: 35px;
   font-weight: 500;
   padding-bottom: 0.8rem;
   color: var(--whiteColor);
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem p {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem p {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 1rem;
   color: var(--whiteColor);
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem a {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem a {
   color: var(--greyText);
   font-size: 20px;
 }
-.keyservices .secContainer .servicesMainContent .servicesContentleft .singleItem a:hover {
+.keyservicessec .secContainer .servicesMainContent .servicesContentleft .singleItem a:hover {
   color: var(--whiteColor);
   font-size: 21px;
-}/*# sourceMappingURL=key.css.map */
+}/*# sourceMappingURL=key.module.css.map */

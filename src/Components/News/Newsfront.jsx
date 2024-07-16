@@ -1,5 +1,5 @@
 import React from 'react'
-import './news.css'
+import newsFront from './news.css'
 import { VscArrowSmallRight } from "react-icons/vsc";
 
 //image

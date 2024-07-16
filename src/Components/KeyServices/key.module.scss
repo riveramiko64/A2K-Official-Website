@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+
 :root {
     --PrimaryColor: hsla(26, 93%, 50%);
     --HoverColor: hsla(26, 90%, 42%);
@@ -17,7 +26,7 @@
     --MoreGoldColor: hsl(38, 59%, 48%);
 }
 
-.keyservices {
+.keyservicessec {
     .secContainer {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -68,6 +77,9 @@
             margin-top: 2.5rem;
             border-top: 1px solid var(--blackColor);
             padding-top: 5rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            
             
             .title {
                     color: var(--blackColor);
@@ -77,6 +89,7 @@
                     font-size: 35px;
                     font-weight: 600;
                     margin-bottom: 1rem;
+                    padding-left: 2rem;
                 }
         .botContent {
             display: grid;

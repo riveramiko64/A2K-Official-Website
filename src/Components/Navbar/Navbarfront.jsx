@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className={transparent}>
         <div className={navBarcss.logoDiv}>
           <a href="#" className={navBarcss.logo}>
-            <img src={a2klogo} alt="Image Logo" />
+            <img className={navBarcss.logo} src={a2klogo} alt="Image Logo" />
             <p className={navBarcss.angad}>ANGAD • ANGAT • KASAMA</p>
           </a>
         </div>
@@ -67,7 +67,7 @@ const Navbar = () => {
             >
               <a href="#" className={navBarcss.navLink}>About Us <RiArrowDownSFill /></a>
               <ul className={navBarcss.dropdownMenu}>
-                <li><a href="#">Our Story</a></li>
+                <li ><a href="#">Our Story</a></li>
                 <li><a href="#">Management Board</a></li>
               </ul>
             </li>

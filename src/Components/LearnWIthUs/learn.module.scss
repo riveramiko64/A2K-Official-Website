@@ -1,5 +1,13 @@
 /* Colors */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
 :root {
     --PrimaryColor: hsla(26, 93%, 50%);
     --HoverColor: hsla(26, 90%, 42%);
@@ -121,7 +129,7 @@
         
                         img {
                             
-                            
+                            object-fit: contain;
                             height: 100px;
                             width: 110px;
                             max-width: 400px; // Adjust width as needed
@@ -172,7 +180,7 @@
         
                          img {
         
-        
+                            object-fit: contain;
                              height: 100px;
                              width: 110px;
                              max-width: 400px; // Adjust width as needed

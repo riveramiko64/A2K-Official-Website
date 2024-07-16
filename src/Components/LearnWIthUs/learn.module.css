@@ -1,4 +1,13 @@
 /* Colors */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
 :root {
   --PrimaryColor: hsla(26, 93%, 50%);
   --HoverColor: hsla(26, 90%, 42%);
@@ -16,88 +25,6 @@
   --ButtonHover: hsl(210, 17%, 98%);
   --GoldColor: hsl(38, 36%, 51%);
   --MoreGoldColor: hsl(38, 59%, 48%);
-}
-
-/* Default Styling*/
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-.section {
-  padding: 1rem 0 1rem;
-}
-
-.container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.icon {
-  font-size: 2rem;
-  cursor: pointer;
-
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-}
-
-.btn {
-  padding: .4rem 1.5rem;
-  background: var(--blackColor);
-  border: none;
-  outline: none;
-  border-radius: 3rem;
-  cursor: pointer;
-}
-
-.btn a {
-  color: var(--whiteColor);
-  font-weight: 500;
-
-}
-
-.btn:hover a {
-  color: var(--whiteColor);
-}
-
-.secIntro {
-  max-width: 70%;
-  text-align: center;
-  margin: 0 auto 2rem;
-}
-
-.secIntro .secTitile {
-  color: var(--blackColor);
-  line-height: 1.5rem;
-  padding-bottom: .5rem;
-}
-
-.secIntro p {
-  font-size: 13px;
-  color: var(--textColor);
-  font-weight: 500;
-}
-
-img,
-video {
-  width: 100%;
-  height: auto;
-}
-
-input {
-  font-size: 100%;
 }
 
 .learn .secContainer {
@@ -181,6 +108,8 @@ input {
   margin-right: 1rem;
 }
 .learn .secContainer .learnMainContent .softwareContent .singleItem img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100px;
   width: 110px;
   max-width: 400px;
@@ -218,6 +147,8 @@ input {
   margin-right: 1rem;
 }
 .learn .secContainer .learnMainContent .hardwareContent .singleItem img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 100px;
   width: 110px;
   max-width: 400px;
@@ -298,4 +229,4 @@ input {
 }
 .learn .secContainer .learnMainContent .certMainContent .certContent .singleItem h1:hover {
   font-size: 21px;
-}/*# sourceMappingURL=learn.css.map */
+}/*# sourceMappingURL=learn.module.css.map */
