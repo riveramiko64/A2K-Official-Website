@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import './story.css'
+import storyfront from './story.module.css'
 import { IoNewspaperOutline } from "react-icons/io5";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
@@ -51,12 +51,12 @@ const Story = () => {
 
 
   return (
-    <section className="offer container section">
+    <section className={storyfront.offer+" "+storyfront.container+" "+storyfront.section}>
 
-      <div className="secContainer" data-aos="fade-up" data-aos-duration="3000">
+      <div className={storyfront.secContainer} data-aos="fade-up" data-aos-duration="3000">
 
-        <div className="secIntroduce">
-          <h2 className="secTitle">
+        <div className={storyfront.secIntroduce}>
+          <h2 className={storyfront.secTitle}>
             A2K GROUP
           </h2>
           <p>
@@ -66,16 +66,16 @@ const Story = () => {
 
         
 
-        <div className="mainContent grid">
+        <div className={storyfront.mainContent+" "+storyfront.grid}>
           {Offers.map((item) => { 
             return (
-              <div className="singleNews">
-            <div className="newsImage">
+              <div className={storyfront.singleNews}>
+            <div className={storyfront.newsImage}>
               <img src={item.imgSrc} alt={`Service ${item.id}`} />
             </div>
 
-            <div className="offerBody">
-                  <div className="price flex">
+            <div className={storyfront.offerBody}>
+                  <div className={storyfront.price+" "+storyfront.flex}>
                     
                 <h4>
                   {item.h4title}
@@ -90,7 +90,7 @@ const Story = () => {
                 </div>
 
               </div>*/}
-              <button className='btn flex' data-aos="zoom-in">Know More {/*<MdOutlineKeyboardArrowRight className='icon' />*/}</button>
+              <button className={storyfront.btn+" "+storyfront} data-aos="zoom-in">Know More {/*<MdOutlineKeyboardArrowRight className='icon' />*/}</button>
 
             </div>
           </div>

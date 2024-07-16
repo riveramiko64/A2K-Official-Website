@@ -19,11 +19,7 @@ const Navbar = () => {
 
   const toggleDropdown = (index) => {
     if (isMobileView) {
-      if (openDropdown === index) {
-        setOpenDropdown(null);
-      } else {
-        setOpenDropdown(index);
-      }
+      setOpenDropdown(openDropdown === index ? null : index);
     }
   };
 
@@ -71,7 +67,10 @@ const Navbar = () => {
                 <li><a href="#">Management Board</a></li>
               </ul>
             </li>
-            <li className={navBarcss.navItem}>
+            <li
+              className={`${navBarcss.navItem} ${openDropdown === 1 ? navBarcss.show : ''}`}
+              onClick={() => toggleDropdown(1)}
+            >
               <a href="#" className={navBarcss.navLink}>Services <RiArrowDownSFill /></a>
               <ul className={navBarcss.dropdownMenu}>
                 <li><a href="#">Learn With Us</a></li>
@@ -84,7 +83,10 @@ const Navbar = () => {
             <li className={navBarcss.navItem}>
               <a href="#" className={navBarcss.navLink}>News</a>
             </li>
-            <li className={navBarcss.navItem}>
+            <li
+              className={`${navBarcss.navItem} ${openDropdown === 2 ? navBarcss.show : ''}`}
+              onClick={() => toggleDropdown(2)}
+            >
               <a href="#" className={navBarcss.navLink}>Contact <RiArrowDownSFill /></a>
               <ul className={navBarcss.dropdownMenu}>
                 <li><a href="#">Group's Directory</a></li>
@@ -107,3 +109,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+  

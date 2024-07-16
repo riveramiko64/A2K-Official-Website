@@ -1,12 +1,12 @@
-import React from 'react'
-import newsFront from './news.css'
+import React from 'react';
+import newsFront from './newsfront.module.css';
 import { VscArrowSmallRight } from "react-icons/vsc";
 
-//image
-import imgNews1 from '../../Assets/news1.jpg'
-import imgNews2 from '../../Assets/news2.jpg'
-import imgNews3 from '../../Assets/news3.jpg'
-import imgNews4 from '../../Assets/news4.jpg'
+// Images
+import imgNews1 from '../../Assets/news1.jpg';
+import imgNews2 from '../../Assets/news2.jpg';
+import imgNews3 from '../../Assets/news3.jpg';
+import imgNews4 from '../../Assets/news4.jpg';
 
 const News = [
   {
@@ -33,54 +33,53 @@ const News = [
     title: 'We Celebrated the Compl...',
     desc: 'Back by popular demand! Are you a past or current University student?* Are you interested '
   },
-]
+];
 
 const NewsA2K = () => {
+
+  
   return (
-
-    <section className="blog container section">
-
-      <div className="secContainer">
-        <div className="secIntro">
-          <h2 className="secTitle" data-aos="fade-right">
+    <section className={newsFront.blog + " container section"}>
+      <div className={newsFront.secContainer}>
+        <div className={newsFront.secIntro}>
+          <h2 className={newsFront.secTitle}>
             OUR LATEST NEWS
           </h2>
-          <p data-aos="fade-left">
+          <p >
             Get in touch with the Latest News of A2K GROUP
           </p>
         </div>
 
-        <div className="mainContainer grid">
+        <div className={newsFront.mainContainer + " grid"}>
+          {News.map((item) => (
+            <div className={newsFront.singleNews} key={item.id}>
+              <div className={newsFront.imgDiv}>
+                <img src={item.newsImage} alt={`News ${item.id}`} />
+              </div>
 
-          {News.map((item) => {
-            return (
-                <div className="singleNews" data-aos="fade-up" data-aos-duration="2000">
-                  <div className="imgDiv">
-                    <img src={item.newsImage} alt={`News ${item.id}`} />
-                  </div>
-
-                  <div className="postDetails">
-                    <h3 data-aos="fade-up" data-aos-duration="3000">
-                      {item.title}
-                    </h3>
-                    <p data-aos="fade-up" data-aos-duration="4000">
-                      {item.desc}
-                    </p>
-                  </div>
-                  <a href="#" className="flex" data-aos="fade-up" data-aos-duration="4500">             
-                    Read More ➜                 
-                  </a>
-                </div>
-            )
-          })}
+              <div className={newsFront.postDetails}>
+                <h3 data-aos="fade-up">
+                  {item.title}
+                </h3>
+                <p>
+                  {item.desc}
+                </p>
+              </div>
+              <a href="#" className={newsFront.flex}>
+                Read More ➜
+              </a>
+            </div>
+          ))}
         </div>
 
-        <button data-aos="zoom-in" className='btnnews'>
+        <div className={newsFront.btnContainer}>
+          <button className={newsFront.btnnews}>
             <a href="#">SEE MORE NEWS</a>
           </button>
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default NewsA2K
+export default NewsA2K;

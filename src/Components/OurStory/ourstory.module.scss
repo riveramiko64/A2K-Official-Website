@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -183,6 +185,7 @@
 
 
         .historyContent {
+            
             margin-top: 5rem;
             padding: 0 6rem 2rem 6rem;
             background: var(--MainColor);
@@ -291,7 +294,7 @@
                     text-align: center;
                     font-size: 16px;
                     font-weight: 400;
-                    padding-bottom: 1rem;
+                    padding-bottom: 4rem;
                     color: var(--whiteColor);
                 }
             }
