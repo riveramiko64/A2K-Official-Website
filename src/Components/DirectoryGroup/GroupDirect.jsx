@@ -1,10 +1,8 @@
-// src/DirectoryTable.js
-import React from 'react';
-import './groupdirect.module.css'; // Make sure this path matches your file structure
-
-const DirectoryTable = () => {
+import React from 'react'
+import './groupdirect.css';
+const GroupDirect = () => {
   return (
-    <div className="directory-table">
+    <div className="directorytable">
       <h1>DIRECTORY</h1>
       <table>
         <thead>
@@ -42,7 +40,7 @@ const DirectoryTable = () => {
             <td>techinfo@a2kgroup.org</td>
           </tr>
           <tr className="divisions">
-            <td rowSpan="12" className="category">Divisions</td>
+            <td rowSpan="13" className="category">Divisions</td>
             <td className="division-title">Angad Digital Engineering Division</td>
             <td></td>
           </tr>
@@ -97,7 +95,7 @@ const DirectoryTable = () => {
         </tbody>
       </table>
     </div>
-  );
+  )
 }
 
-export default DirectoryTable;
+export default GroupDirect

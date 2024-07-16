@@ -12,15 +12,13 @@ import KeyServices from './Components/KeyServices/KeyServices'
 import Learn from './Components/LearnWIthUs/Learn'
 import OurStory from './Components/OurStory/OurStory'
 import Navbar from './Components/Navbar/Navbarfront'
-import DirectoryTable from './Components/GroupDirectory/GroupDirectory'
+import GroupDirect from './Components/DirectoryGroup/GroupDirect'
 import Homes from './Components/Home/Homefront'
-
 const App = () => {
   return (
     <>
-<Homes/>
-      <DirectoryTable/>
-
+      <GroupDirect />
+      <Homes  />
       {/*
     
                 <Navbar />
@@ -29,7 +27,7 @@ const App = () => {
       <Services />
         <Story />
       <KeyServices/>
-      <Home  />
+      
       <About/>
        <Navbar />        
          <ContactForm/>         
