@@ -18,7 +18,7 @@ li {
     list-style: none;
 }
 
-.section {
+.strsection {
     padding: 1rem 0 1rem;
 }
 
@@ -43,7 +43,7 @@ li {
     align-items: center;
 }
 
-.btn {
+.strbtn {
     padding: .4rem 1.5rem;
     background: var(--blackColor);
     border: none;
@@ -52,13 +52,13 @@ li {
     cursor: pointer;
 }
 
-.btn a {
+.strbtn a {
     color: var(--whiteColor);
     font-weight: 500;
 
 }
 
-.btn:hover a {
+.strbtn:hover a {
     color: var(--whiteColor);
 }
 
@@ -215,7 +215,7 @@ input {
                         }
                     }
 
-                    .btn{
+                    .strbtn{
                         margin-top: 1rem;
                         width: 100%;
                         text-align: center;

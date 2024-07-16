@@ -17,7 +17,7 @@ li {
   list-style: none;
 }
 
-.section {
+.strsection {
   padding: 1rem 0 1rem;
 }
 
@@ -41,7 +41,7 @@ li {
   align-items: center;
 }
 
-.btn {
+.strbtn {
   padding: 0.4rem 1.5rem;
   background: var(--blackColor);
   border: none;
@@ -50,12 +50,12 @@ li {
   cursor: pointer;
 }
 
-.btn a {
+.strbtn a {
   color: var(--whiteColor);
   font-weight: 500;
 }
 
-.btn:hover a {
+.strbtn:hover a {
   color: var(--whiteColor);
 }
 
@@ -192,7 +192,7 @@ input {
   background: var(--greyBg);
   gap: 0.5rem;
 }
-.offer .secContainer .mainContent .singleNews .offerBody .btn {
+.offer .secContainer .mainContent .singleNews .offerBody .strbtn {
   margin-top: 1rem;
   width: 100%;
   text-align: center;
@@ -204,11 +204,11 @@ input {
   font-weight: 600;
   gap: 0.5rem;
 }
-.offer .secContainer .mainContent .singleNews .offerBody .btn:hover {
+.offer .secContainer .mainContent .singleNews .offerBody .strbtn:hover {
   background-color: var(--blackColor);
   color: var(--whiteColor);
 }
-.offer .secContainer .mainContent .singleNews .offerBody .btn .icon {
+.offer .secContainer .mainContent .singleNews .offerBody .strbtn .icon {
   color: var(--whiteColor);
 }
 .offer .secContainer .mainContent .singleNews:hover {

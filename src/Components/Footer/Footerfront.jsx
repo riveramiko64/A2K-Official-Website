@@ -8,7 +8,7 @@ import { BsLinkedin } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className={footercss.footer}>
-      <div className={`${footercss.secContainer} ${footercss.container} ${footercss.grid}`}>
+      <div className={`${footercss.secContainer} ${footercss.csscontainer} ${footercss.grid}`}>
         <div className={footercss.logoDiv}>
           <div className={footercss.footerLogo}>
             <a href="#" className={footercss.logo}>

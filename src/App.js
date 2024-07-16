@@ -17,23 +17,25 @@ import Homes from './Components/Home/Homefront'
 const App = () => {
   return (
     <>
-      <GroupDirect />
-      <Homes  />
-      {/*
-    
-                <Navbar />
-      
+
+     
       <NewsA2K />
       <Services />
         <Story />
-      <KeyServices/>
+      
       
       <About/>
-       <Navbar />        
-         <ContactForm/>         
-        
-          <Footer />
        
+      
+      {/*
+    
+                     
+         
+       <ContactForm/>         
+         <GroupDirect />
+          <Footer />
+      <Homes />
+      <KeyServices/>
       
          */}
       

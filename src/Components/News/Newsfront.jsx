@@ -37,15 +37,15 @@ const News = [
 
 const NewsA2K = () => {
 
-  
+
   return (
-    <section className={newsFront.blog + " container section"}>
+    <section className={newsFront.blog + " containers section"}>
       <div className={newsFront.secContainer}>
         <div className={newsFront.secIntro}>
           <h2 className={newsFront.secTitle}>
             OUR LATEST NEWS
           </h2>
-          <p >
+          <p className={newsFront.ptitle}>
             Get in touch with the Latest News of A2K GROUP
           </p>
         </div>

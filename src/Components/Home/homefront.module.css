@@ -113,7 +113,7 @@
   margin: auto;
   line-height: 1.7rem;
 }
-.home .secContainer .homeText .btn {
+.home .secContainer .homeText .btns {
   margin: 0.5rem;
   padding: 1rem 2rem;
   background-color: transparent;
@@ -122,15 +122,15 @@
   cursor: pointer;
   border-radius: 3rem;
 }
-.home .secContainer .homeText .btn:hover {
+.home .secContainer .homeText .btns:hover {
   background-color: var(--whiteColor);
   color: var(--GoldColor);
 }
-.home .secContainer .homeText .btn a {
+.home .secContainer .homeText .btns a {
   font-weight: 500;
   color: inherit;
 }
-.home .secContainer .homeText .btn a:hover {
+.home .secContainer .homeText .btns a:hover {
   color: var(--textColor);
 }
 

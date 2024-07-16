@@ -51,7 +51,7 @@ const Story = () => {
 
 
   return (
-    <section className={storyfront.offer+" "+storyfront.container+" "+storyfront.section}>
+    <section className={storyfront.offer+" "+storyfront.storycontainer+" "+storyfront.strsection}>
 
       <div className={storyfront.secContainer} data-aos="fade-up" data-aos-duration="3000">
 
@@ -90,7 +90,7 @@ const Story = () => {
                 </div>
 
               </div>*/}
-              <button className={storyfront.btn+" "+storyfront} data-aos="zoom-in">Know More {/*<MdOutlineKeyboardArrowRight className='icon' />*/}</button>
+              <button className={storyfront.strbtn+" "+storyfront} data-aos="zoom-in">Know More {/*<MdOutlineKeyboardArrowRight className='icon' />*/}</button>
 
             </div>
           </div>

@@ -53,13 +53,13 @@ const Homes = () => {
           <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" className={homeCss.subTitle}>
             Our international team of mentors and experts stands ready to collaborate with you in crafting tailored digital solutions that cater to your unique needs. Together we can unlock the potential of digitalization, extending its benefits to your people, processes, and platforms.
           </p>
-          <button data-aos="zoom-out" className={homeCss.btn}>
+          <button data-aos="zoom-out" className={homeCss.btns}>
             <a href="#">SEE WHAT TO DO</a>
           </button>
-          <button data-aos="zoom-in" className={homeCss.btn}>
+          <button data-aos="zoom-in" className={homeCss.btns}>
             <a href="#">LEARN WITH US</a>
           </button>
-          <button data-aos="zoom-out" className={homeCss.btn}>
+          <button data-aos="zoom-out" className={homeCss.btns}>
             <a href="#">WORK WITH US</a>
           </button>
         </div>

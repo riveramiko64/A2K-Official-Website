@@ -123,7 +123,7 @@ const KeyServices = () => {
           KEY SERVICES BY DIVISIONS
         </h2>
 
-        <div className={`${keyservices.mainContent} container grid`}>
+        <div className={`${keyservices.mainContent} containers grid`}>
           <div className={keyservices.singleItem} data-aos="zoom-in-right">
             <img src={keyImg} alt="Image Name" />
             <p>Developing app and hardware solutions for organizations for unmet digitization needs.</p>
@@ -143,7 +143,7 @@ const KeyServices = () => {
 
         <div className={keyservices.botMainContent}>
           <h1 className={keyservices.title} data-aos="fade-right">KEY ENGINEERING CAPABILITIES</h1>
-          <div className={`${keyservices.botContent} container grid`}>
+          <div className={`${keyservices.botContent} containers grid`}>
             <div className={keyservices.singleItem} data-aos="flip-left">
               <h1>ENGINEERING CAPABILITIES</h1>
               <img src={keycapImg} alt="Image Name" />

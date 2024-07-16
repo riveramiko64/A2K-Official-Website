@@ -58,7 +58,7 @@ const Services = () => {
   };
 
   return (
-    <section className={`${servicesfront.popular} ${servicesfront.section} ${servicesfront.container}`}>
+    <section className={`${servicesfront.popular} ${servicesfront.section} ${servicesfront.servcontainer}`}>
       <div className={servicesfront.secContainer}>
         <div className={`${servicesfront.secHeader} ${servicesfront.flex}`}>
           <div className={servicesfront.textDiv}>

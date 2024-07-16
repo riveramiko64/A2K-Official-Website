@@ -40,7 +40,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
-.blog .secContainer .secIntro p {
+.blog .secContainer .secIntro .ptitle {
   font-size: 20px;
   color: var(--textColor);
   font-weight: 500;

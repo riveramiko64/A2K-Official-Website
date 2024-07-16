@@ -13,7 +13,7 @@ const ContactForm = () => {
     }, []);
     
     return (
-        <div className={contactForm['contact-form-container']}>
+        <div className={contactForm['contact-form-containers']}>
 
             <div className={contactForm['contact-form-bg']}>
               
