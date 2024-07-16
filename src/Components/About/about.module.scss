@@ -16,11 +16,12 @@
     --GoldColor: hsl(38, 36%, 51%);
 }
 
-.about {
-    .secContainer {
+.aboutCssAbout {
+    .aboutCssSecContainer {
         padding-top: 2rem;
         padding-bottom: 2rem;
-        .title {
+
+        .aboutCssTitle {
             color: var(--blackColor);
             line-height: 1.5rem;
             padding-bottom: .8rem;
@@ -29,13 +30,15 @@
             font-weight: 500;
         }
 
-        .mainContent {
+        .aboutCssMainContent {
             gap: 1rem;
             display: flex; // Change to flex row
             justify-content: center;
             align-items: center;
+            padding-right: 2rem;
+            padding-left: 2rem;
 
-            .singleItem {
+            .aboutCssSingleItem {
                 text-align: center;
                 margin: 1rem;
 
@@ -45,11 +48,7 @@
                     margin-bottom: 1rem;
                 }
 
-                
-
                 p {
-                   
-                    
                     font-size: 16px;
                     font-weight: 500;
                     padding-bottom: .5rem;
@@ -58,7 +57,7 @@
             }
         }
 
-        .videoCard {
+        .aboutCssVideoCard {
             margin-left: 2rem;
             margin-right: 2rem;
             border-radius: 10px;
@@ -69,13 +68,13 @@
             background-size: cover;
             background-repeat: no-repeat;
 
-            .cardContent {
+            .aboutCssCardContent {
                 display: flex;
                 align-items: center;
                 gap: 2rem;
                 padding: 2rem 1rem;
 
-                .cardText {
+                .aboutCssCardText {
                     flex: 1;
 
                     h2 {
@@ -85,7 +84,7 @@
                         padding-bottom: 1rem;
                         text-align: center;
 
-                        .welcome {
+                        .aboutCssWelcome {
                             font-weight: 400;
                             color: var(--whiteColor);
                         }
@@ -102,7 +101,7 @@
                     }
                 }
 
-                .cardVideo {
+                .aboutCssCardVideo {
                     flex: 0 0 550px; // Fixed width for the video
                     border: 2px solid var(--whiteColor);
                     height: 300px; // Adjust height as needed
@@ -121,25 +120,25 @@
 }
 
 @media screen and (max-width: 720px) {
-    .about {
-        .secContainer {
-            .mainContent {
+    .aboutCssAbout {
+        .aboutCssSecContainer {
+            .aboutCssMainContent {
                 flex-direction: column;
             }
 
-            .videoCard {
-                .cardContent {
+            .aboutCssVideoCard {
+                .aboutCssCardContent {
                     flex-direction: column;
                     gap: 4rem;
                     padding: 4rem 3rem;
 
-                    .cardText {
+                    .aboutCssCardText {
                         h2 {
                             font-size: 4rem;
                         }
                     }
 
-                    .cardVideo {
+                    .aboutCssCardVideo {
                         width: 100%;
                         height: auto;
                     }

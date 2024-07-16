@@ -16,11 +16,11 @@
   --GoldColor: hsl(38, 36%, 51%);
 }
 
-.about .secContainer {
+.aboutCssAbout .aboutCssSecContainer {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.about .secContainer .title {
+.aboutCssAbout .aboutCssSecContainer .aboutCssTitle {
   color: var(--blackColor);
   line-height: 1.5rem;
   padding-bottom: 0.8rem;
@@ -28,28 +28,30 @@
   font-size: 35px;
   font-weight: 500;
 }
-.about .secContainer .mainContent {
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent {
   gap: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
-.about .secContainer .mainContent .singleItem {
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem {
   text-align: center;
   margin: 1rem;
 }
-.about .secContainer .mainContent .singleItem img {
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem img {
   width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
 }
-.about .secContainer .mainContent .singleItem p {
+.aboutCssAbout .aboutCssSecContainer .aboutCssMainContent .aboutCssSingleItem p {
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 0.5rem;
   color: var(--textColor);
 }
-.about .secContainer .videoCard {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard {
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 10px;
@@ -60,27 +62,27 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.about .secContainer .videoCard .cardContent {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent {
   display: flex;
   align-items: center;
   gap: 2rem;
   padding: 2rem 1rem;
 }
-.about .secContainer .videoCard .cardContent .cardText {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText {
   flex: 1;
 }
-.about .secContainer .videoCard .cardContent .cardText h2 {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 {
   color: var(--GoldColor);
   font-weight: 600;
   font-size: 3.5rem;
   padding-bottom: 1rem;
   text-align: center;
 }
-.about .secContainer .videoCard .cardContent .cardText h2 .welcome {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 .aboutCssWelcome {
   font-weight: 400;
   color: var(--whiteColor);
 }
-.about .secContainer .videoCard .cardContent .cardText p {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText p {
   text-align: center;
   color: var(--whiteColor);
   opacity: 0.7;
@@ -89,14 +91,14 @@
   letter-spacing: 1px;
   line-height: 1.3rem;
 }
-.about .secContainer .videoCard .cardContent .cardVideo {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo {
   flex: 0 0 550px;
   border: 2px solid var(--whiteColor);
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
 }
-.about .secContainer .videoCard .cardContent .cardVideo video {
+.aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -104,19 +106,19 @@
 }
 
 @media screen and (max-width: 720px) {
-  .about .secContainer .mainContent {
+  .aboutCssAbout .aboutCssSecContainer .aboutCssMainContent {
     flex-direction: column;
   }
-  .about .secContainer .videoCard .cardContent {
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent {
     flex-direction: column;
     gap: 4rem;
     padding: 4rem 3rem;
   }
-  .about .secContainer .videoCard .cardContent .cardText h2 {
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardText h2 {
     font-size: 4rem;
   }
-  .about .secContainer .videoCard .cardContent .cardVideo {
+  .aboutCssAbout .aboutCssSecContainer .aboutCssVideoCard .aboutCssCardContent .aboutCssCardVideo {
     width: 100%;
     height: auto;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.module.css.map */

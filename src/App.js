@@ -15,22 +15,24 @@ import OurStory from './Components/OurStory/OurStory'
 const App = () => {
   return (
     <>
-      {/*
-          <Navbar />
-          <Home />
-          <Services />
+      
+         
+          
           <About/>
-          <Story />
-          <NewsA2K />
-          <ContactForm/>
-          <Footer />
+          
 
-          <OurStory/>
-      */}
+          
+      
 
-
+      {/*<OurStory/>
       <Learn/>
       <KeyServices/>
+       <Navbar />
+      <Story />
+          <NewsA2K />
+          <ContactForm/>
+          <Footer />*/}
+      
       
           
       </>

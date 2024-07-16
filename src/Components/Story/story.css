@@ -63,6 +63,8 @@
 }
 .offer .secContainer .mainContent .singleNews .newsImage img {
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .offer .secContainer .mainContent .singleNews .offerBody {
   padding: 1rem;
